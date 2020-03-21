@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ["gain life", 0, "w"],
     ["add <span class='mana r'></span>", 0, "rrr"],
     ["draw cards", 2, "uu"],
-    ["creature a number of 1/1 white Human creature tokens", 2, "w"],
+    ["create a number of 1/1 white Human creature tokens", 2, "w"],
     ["equal to", 0],
     ["your life total", 6, "ww"],
     ["target creature's power", 3, "gg"],
