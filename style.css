@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'belerenbold';
+    src: url('beleren-bold_1-webfont.woff2') format('woff2'),
+         url('beleren-bold_1-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+  vertical-align: baseline;
+  box-sizing: inherit;
+  color: inherit;
+  background: transparent none;
+}
+
+html, body {
+  font-size: 16px;
+  font-family: belerenbold, serif;
+  font-style: normal;
+  font-weight: normal;
+  box-sizing: border-box;
+  color: black;
+  background: #e7dcc6 url("background.jpg") repeat;
+}
+
+main {
+  margin: 1em auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.mana {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding-top: 2px;
+  font-size: 16px;
+  text-align: center;
+  background: transparent url("mana.png") no-repeat 0 0;
+  vertical-align: middle;
+}
+.mana.w { background-position: -20px, 0; }
+.mana.u { background-position: -40px, 0; }
+.mana.b { background-position: -60px, 0; }
+.mana.r { background-position: -80px, 0; }
+.mana.g { background-position: -100px, 0; }
+
+form {
+  padding: 10px;
+}
+
+form p {
+  height: 32px;
+}
+
+input {
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+#outMana {
+  float: right;
+  padding: 2px 4px 0;
+}
+
+#outTitle, #outType {
+  border: 1px solid black;
+  border-radius: 10px;
+  background: #cbbd90;
+  padding: 4px;
+}
+
+#outText {
+  min-height: 200px;
+  width: calc(100% - 25px);
+  margin: auto;
+  padding: 10px;
+  border: 1px solid black;
+  border-top: none;
+  background: rgba(255,255,255,0.5);
+}
+
+#outText p {
+  margin-bottom: 4px;
+}
